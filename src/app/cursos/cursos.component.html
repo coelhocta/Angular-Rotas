@@ -1,0 +1,9 @@
+<p>Lista de Cursos</p>
+<p>Página: {{ pagina }}</p>
+<mat-chip-list class="mat-chip-list-stacked" aria-label="Color selection">
+    <mat-chip *ngFor="let curso of cursos" [routerLink]="['/cursos', curso.id]" routerLinkActive="router-link-active">
+        {{curso.nome}}
+    </mat-chip>
+</mat-chip-list>
+<br>
+<button (click)="proximaPagina()">Proxima Página</button>

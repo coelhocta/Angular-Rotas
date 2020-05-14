@@ -1,0 +1,7 @@
+    .mat-chip {
+        color: red;
+    }
+    
+    .mat-chip-list {
+        width: max-content;
+    }

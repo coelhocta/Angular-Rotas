@@ -1,0 +1,21 @@
+<h1>Login</h1>
+
+<div class="example-container">
+    <br>
+    <mat-form-field appearance="fill">
+        <mat-label>Usuario</mat-label>
+        <input [(ngModel)]="usuario.nome" id="usuario" class="validate" matInput>
+    </mat-form-field>
+    <br>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Senha</mat-label>
+        <input [(ngModel)]="usuario.senha" id="senha" type="password" class="validate" matInput>
+    </mat-form-field>
+    <br>
+    <button mat-raised-button color="accent" (click)="fazerLogin()">
+    Login <i class="material-icons">person</i>
+    </button>
+
+
+</div>

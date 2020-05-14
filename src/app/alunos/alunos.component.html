@@ -1,0 +1,15 @@
+<p>Lista de Alunos</p>
+
+<mat-grid-list cols="6" rows="10">
+
+    <mat-grid-tile rowspan=2>
+        <mat-chip-list class="mat-chip-list-stacked" aria-label="Color selection">
+            <mat-chip *ngFor="let aluno of alunos" [routerLink]="[aluno.id]" routerLinkActive="router-link-active">
+                {{aluno.nome}}
+            </mat-chip>
+        </mat-chip-list>
+    </mat-grid-tile>
+    <mat-grid-tile colspan=2 rowspan=2>
+        <router-outlet></router-outlet>
+    </mat-grid-tile>
+</mat-grid-list>
